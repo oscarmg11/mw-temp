@@ -1,0 +1,122 @@
+nav{ top: 0; }
+
+nav a{ opacity: 1; }
+
+:root{
+    --top1: 71.5%;
+    --top2: 53%;
+    --top3: 34.25%;
+}
+
+#content-container{
+    opacity: 1;
+    height: 80vh;
+    justify-content: center;
+}
+
+#content-container img{
+    width: 80vw;
+}
+
+.indicator{
+    position: absolute;
+    width: 3%;
+    height: 15%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#MXC001{
+    top: var(--top1);
+    left: 78.25%;
+}
+
+#MXC002{
+    top: var(--top1);
+    left: 74.25%;
+}
+
+#MXC003{
+    top: var(--top1);
+    left: 70.25%;
+}
+
+#MXC005{
+    top: var(--top2);
+    left: 22%;
+}
+
+#MXC006{
+    top: var(--top2);
+    left: 76.5%;
+}
+
+#MXC007{
+    top: var(--top2);
+    left: 71%;
+}
+
+#MXC008{
+    top: var(--top2);
+    left: 65%;
+}
+
+#MXC009{
+    top: var(--top3);
+    left: 40.5%;
+    width: 5%;
+}
+
+#MXC010{
+    top: var(--top3);
+    left: 75.5%;
+    width: 5%;
+}
+
+#MXC011{
+    top: var(--top3);
+    left: 69%;
+    width: 5%;
+}
+
+#MXC012{
+    top: var(--top3);
+    left: 20.5%;
+    width: 5%;
+}
+
+#MXC013{
+    top: var(--top3);
+    left: 34%;
+    width: 5%;
+}
+
+#MXC015{
+    top: var(--top1);
+    left: 23.5%;
+}
+
+#MXC016{
+    top: var(--top1);
+    left: 35%;
+}
+
+#MXC017{
+    top: var(--top3);
+    left: 27%;
+    width: 5%;
+}
+
+#MXC018{
+    top: var(--top1);
+    left: 31%;
+}
+
+#MXC019{
+    top: var(--top3);
+    left: 62%;
+    width: 5%;
+}
+

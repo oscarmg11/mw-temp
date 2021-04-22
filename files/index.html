@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    
+    <div id="app">
+        <nav id="navbar">
+            <a class="navbar-option" href="layout.html">
+                <img src="assets/layout.png" alt="icono de layout"/>
+            </a>
+            <img src="assets//milwaukee.png" alt="logo de milwaukee" id="img-splash-screen">
+            <a class="navbar-option" href="historial.html">Historial</a>
+            <span class="far fa-bars" id="navbar-btn"</span>
+        </nav>
+        <div id="navbar-mobile">
+            <div id="navbar-mobile-content">
+                <a href="layout.html">Layout</a>
+                <a href="historial.html">Historial</a>
+            </div>
+        </div>
+        <div id="content-container">
+            <div class="input-container">
+                <label>Lugar: </label>
+                <select id="select-place">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="row" id="row-canvas">
+                <div class="canvas-container">
+                    <h1>Temperatura</h1>
+                    <canvas id="gTemp" width="350" height="350"></canvas>
+                </div>
+                <div class="canvas-container">
+                    <h1>Presión</h1>
+                    <canvas id="gPre" width="350" height="350"></canvas>
+                </div>
+                <div class="canvas-container">
+                    <h1>Humedad</h1>
+                    <canvas id="gHum" width="350" height="350"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div class="graph-container">
+                    <div id="graficaLinealTemp"></div>
+                </div>
+                <div class="graph-container">
+                    <div id="graficaLinealPres"></div>
+                </div>
+                <div class="graph-container">
+                    <div id="graficaLinealHum"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/splashScreen.js" type="text/javascript"></script>
+    <script src="js/indicator.js" type="text/javascript"></script>
+    <script src="js/plotly.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/navbar.js" type="text/javascript"></script>
+</body>
+</html>
