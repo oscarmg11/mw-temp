@@ -1,10 +1,11 @@
 $('#btn-historial').on('click', () => {
     const from = $('#from').val()
     const to = $('#to').val()
+    const place = $('#select-place').val()
 
     if(from !== "" && to !== ""){
         $.ajax({
-            url: `historial.php?from=${from}&to=${to}&apiKey=tPmAT5Ab3j7F9`,
+            url: `historial.php?from=${from}&to=${to}&place=${place}&apiKey=tPmAT5Ab3j7F9`,
             cache: false,
             success: function(data) {
                 console.log(data)

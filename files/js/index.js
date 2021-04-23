@@ -24,7 +24,7 @@ function main(){
     const urlParams = new URLSearchParams(window.location.search);
     const place = urlParams.get('place')
     
-    $('#select-place').val(place)
+    if(place){ $('#select-place').val(place) }
 
     interval = setInterval(() => {
         $.ajax({
@@ -54,7 +54,6 @@ function main(){
         url: `index.php?last=false&place=${$('#select-place').val()}`,
         cache: false,
         success: function(data) {
-            console.log(data)
             removeSplashScreen()
 
             const dataParsed = JSON.parse(data)

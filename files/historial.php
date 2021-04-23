@@ -14,10 +14,8 @@
     parse_str($_SERVER['QUERY_STRING'], $queries);
 
     if($queries['apiKey'] == $api_key_value){
-        $queries = array();
-        parse_str($_SERVER['QUERY_STRING'], $queries);
-
-        $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries['place'] . " AND timeStamp BETWEEN '" . $queries['from'] . " 00:00:00' AND '" . $queries['to'] . " 23:59:59' ORDER BY id DESC LIMIT 1";
+        
+        $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries["place"] . " AND timeStamp BETWEEN '" . $queries["from"] . " 00:00:00' AND '" . $queries["to"] . " 23:59:59' ORDER BY id DESC LIMIT 1";
         
         $result= mysqli_query($connection, $sql);
 
