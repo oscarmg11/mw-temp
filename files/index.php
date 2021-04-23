@@ -9,21 +9,20 @@
 
     $td = date("Y-m-d");
     $api_key_value = "tPmAT5Ab3j7F9";
-    //$td = '2021-03-28';
+
+    $queries = array();
+    parse_str($_SERVER['QUERY_STRING'], $queries);
 
     if($_SERVER['REQUEST_METHOD'] == "GET"){
-        
-    
-        $queries = array();
-        parse_str($_SERVER['QUERY_STRING'], $queries);
     
         if($queries['last'] == 'true'){
-            $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries['place'] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC LIMIT 1";
+            $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries["place"] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC LIMIT 1";
         }else{
-            $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries['place'] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC";
+            $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries["place"] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC";
         }
-        
         $result= mysqli_query($connection, $sql);
+
+
 
         $connection->close();
     

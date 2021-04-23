@@ -11,7 +11,7 @@ function openCharts(){
 }
 
 function removeSplashScreen(){
-    $('#img-splash-screen').css('height', '100%')
+    $('#img-splash-screen').css('width', '100%')
     $('#img-splash-screen').css('opacity', '1')
     clearInterval(Number(window.localStorage.getItem('interval')))
     setTimeout(openCharts, 1500);
@@ -19,17 +19,17 @@ function removeSplashScreen(){
 
 function animation(){
     if(ctrl){
-        $('#img-splash-screen').css('height', '50%')
+        $('#img-splash-screen').css('width', '50%')
         $('#img-splash-screen').css('opacity', '0.2')
     }else{
-        $('#img-splash-screen').css('height', '100%')
+        $('#img-splash-screen').css('width', '100%')
         $('#img-splash-screen').css('opacity', '1')
     }
     ctrl = !ctrl
 }
 
 function startSplashScreen(){
-    $('#img-splash-screen').css('height', '80%')
+    $('#img-splash-screen').css('width', '100%')
     $('#img-splash-screen').css('opacity', '0.2')
     interval = setInterval(animation, 1000);
     window.localStorage.setItem('interval', interval)

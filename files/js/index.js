@@ -54,6 +54,7 @@ function main(){
         url: `index.php?last=false&place=${$('#select-place').val()}`,
         cache: false,
         success: function(data) {
+            console.log(data)
             removeSplashScreen()
 
             const dataParsed = JSON.parse(data)

@@ -1,5 +1,4 @@
-const lines = ['MXC001', 'MXC002', 'MXC003', 'MXC004', 'MXC005', 'MXC006', 'MXC007', 'MXC008', 'MXC009', 'MXC010',
-                'MXC011', 'MXC012', 'MXC013', 'MXC015', 'MXC016', 'MXC017', 'MXC018', 'MXC019']
+const lines = ['place1', 'place2', 'place3', 'place4', 'place5', 'place6']
 
 function handleClick(e){
     console.log(e.target.id)
@@ -8,6 +7,7 @@ function handleClick(e){
 }
 
 $(document).ready(() => {
+    $('#img-splash-screen').css('width', '100%')
     for(let i = 0; i < lines.length; i++){
         const element = document.getElementById(lines[i])
         if(element){ element.addEventListener('click', handleClick) }

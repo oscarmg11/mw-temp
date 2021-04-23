@@ -29,9 +29,12 @@ nav a{
     font-size: 2vw;
     text-decoration: none;
     transition: all 1s ease-in-out;
-    opacity: 0;
     width: 15vw;
     text-align: center;
+}
+
+nav .navbar-option{
+    opacity: 0;
 }
 
 #navbar-btn{ display: none}
@@ -49,6 +52,7 @@ nav a{
 nav img{
     height: 100%;
     transition: all 1s ease-in-out;
+    margin: 0 auto;
 }
 
 .navbar-option img{ width: 10vw; }
@@ -140,6 +144,64 @@ nav img{
 .input-container select option{
     background-color: black;
 }
+
+footer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(41, 41, 41);
+    padding: 0 5%;
+    height: 10%;
+}
+
+footer .info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #logo-container{
+    justify-content: flex-start;
+}
+
+footer .info img{
+    width: 6%;
+    margin-right: 0.5vw;
+}
+
+footer .info #logo{
+    width: 40%;
+}
+
+footer .info #qr{
+    width: 9%;
+    margin-right: 0;
+}
+
+footer .info .address{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1vw;
+}
+
+footer .info .address span{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+}
+
+footer .info a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+
 
 @media (max-width: 768px) {
     nav{

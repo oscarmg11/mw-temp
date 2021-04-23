@@ -1,6 +1,6 @@
 nav{ top: 0; }
 
-nav a{ opacity: 1; }
+nav .navbar-option{ opacity: 1; }
 
 :root{
     --top1: 71.5%;
@@ -20,7 +20,7 @@ nav a{ opacity: 1; }
 
 .indicator{
     position: absolute;
-    width: 3%;
+    width: 40%;
     height: 15%;
     z-index: 4;
     top: 0;
@@ -28,95 +28,39 @@ nav a{ opacity: 1; }
     cursor: pointer;
 }
 
-#MXC001{
-    top: var(--top1);
-    left: 78.25%;
+#place1{
+    top: 35%;
+    left: 13%;
 }
 
-#MXC002{
-    top: var(--top1);
-    left: 74.25%;
+#place2{
+    top: 53%;
+    left: 13%;
+    height: 13%;
 }
 
-#MXC003{
-    top: var(--top1);
-    left: 70.25%;
+#place3{
+    top: 69%;
+    left: 13%;
+    height: 13%;
 }
 
-#MXC005{
-    top: var(--top2);
-    left: 22%;
+#place4{
+    top: 35%;
+    left: 55%;
+    width: 33%;
 }
 
-#MXC006{
-    top: var(--top2);
-    left: 76.5%;
+#place5{
+    top: 53%;
+    left: 55%;
+    height: 13%;
+    width: 33%;
 }
 
-#MXC007{
-    top: var(--top2);
-    left: 71%;
+#place6{
+    top: 69%;
+    left: 55%;
+    height: 13%;
+    width: 33%;
 }
-
-#MXC008{
-    top: var(--top2);
-    left: 65%;
-}
-
-#MXC009{
-    top: var(--top3);
-    left: 40.5%;
-    width: 5%;
-}
-
-#MXC010{
-    top: var(--top3);
-    left: 75.5%;
-    width: 5%;
-}
-
-#MXC011{
-    top: var(--top3);
-    left: 69%;
-    width: 5%;
-}
-
-#MXC012{
-    top: var(--top3);
-    left: 20.5%;
-    width: 5%;
-}
-
-#MXC013{
-    top: var(--top3);
-    left: 34%;
-    width: 5%;
-}
-
-#MXC015{
-    top: var(--top1);
-    left: 23.5%;
-}
-
-#MXC016{
-    top: var(--top1);
-    left: 35%;
-}
-
-#MXC017{
-    top: var(--top3);
-    left: 27%;
-    width: 5%;
-}
-
-#MXC018{
-    top: var(--top1);
-    left: 31%;
-}
-
-#MXC019{
-    top: var(--top3);
-    left: 62%;
-    width: 5%;
-}
-
