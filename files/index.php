@@ -16,6 +16,8 @@
     
         $queries = array();
         parse_str($_SERVER['QUERY_STRING'], $queries);
+
+        echo $queries;
     
         if($queries['last'] == 'true'){
             $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries['place'] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC LIMIT 1";
@@ -23,6 +25,8 @@
             $sql = "SELECT timeStamp, temperature, humidity, pressure FROM monitor WHERE lugar = " . $queries['place'] . " AND timeStamp BETWEEN '" . $td . " 00:00:00' AND '" . $td . " 23:59:59' ORDER BY id DESC";
         }
         
+
+        $sql = "SELECT * FROM monitor";
         $result= mysqli_query($connection, $sql);
 
         $connection->close();
