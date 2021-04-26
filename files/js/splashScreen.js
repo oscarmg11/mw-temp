@@ -18,6 +18,7 @@ function removeSplashScreen(){
 }
 
 function animation(){
+    console.log('a')
     if(ctrl){
         $('#img-splash-screen').css('width', '50%')
         $('#img-splash-screen').css('opacity', '0.2')
